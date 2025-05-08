@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: NYC_TAXI
+    tables:
+      - name: raw_yellow
+        identifier: yellow_taxi
+      - name: raw_green
+        identifier: green_taxi
+      - name: raw_fhv
+        identifier: fhv
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
