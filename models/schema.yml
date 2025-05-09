@@ -2,12 +2,13 @@ version: 2
 
 sources:
   - name: raw
-    schema: NYC_TAXI
+    database: terraform-demo-457908
+    schema: Nvo_taxi
     tables:
       - name: raw_yellow
-        identifier: yellow_taxi
+        identifier: yellow_tripdata_external_table
       - name: raw_green
-        identifier: green_taxi
+        identifier: green_tripdata_external_table
       - name: raw_fhv
         identifier: fhv
 
